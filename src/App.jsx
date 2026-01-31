@@ -5,7 +5,7 @@ import Research from "./pages/Research";
 import Publications from "./pages/Publications"; 
 import Teaching from "./pages/Teaching"; 
 import CV from "./pages/CV"; 
-import Contact from "./pages/contact"; 
+import Contact from "./pages/Contact"; 
 
 function App() {
   return (
