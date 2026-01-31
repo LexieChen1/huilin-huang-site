@@ -16,5 +16,5 @@ Assistant Professor in the **Department of Environmental Sciences** at the **Uni
 
 ## Developer 
 Developed and maintained by **Lexie Chen**,  
-Research Assistant for Dr. Huilin Huang
+Research Assistant for Dr. Huilin Huang, 
 January 2026
