@@ -1,0 +1,93 @@
+.research-section {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.research-text p {
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.research-list {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.research-list li {
+  margin-bottom: 18px;
+  font-size: 1.05rem;
+}
+
+.research-list strong {
+  font-weight: 700;
+  position: relative;
+}
+
+/* subtle underline accent like screenshot */
+.research-list strong::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 60%;
+  margin-top: 4px;
+  background: rgba(0, 90, 130, 0.3);
+}
+
+.research-image img {
+  width: 100%;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.title-divider {
+  width: 100%;
+  height: 1.5px;
+  margin: 10px 0 20px 0;
+  background-color: #2c3e50;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.2);
+}
+
+.research-lead {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.research-themes h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+.research-themes ul {
+  list-style: none;
+  padding: 0;
+}
+
+.research-themes li {
+  margin-bottom: 22px;
+}
+
+.research-themes strong {
+  display: block;
+  font-size: 1.05rem;
+  margin-bottom: 4px;
+  position: relative;
+}
+
+.research-themes strong::after {
+  content: "";
+  display: block;
+  width: 70%;
+  height: 2px;
+  margin-top: 6px;
+  background: rgba(44, 62, 80, 0.3);
+}
+
+.research-themes span {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+}

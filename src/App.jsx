@@ -1,25 +1,23 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./components/Layout"; 
 import Home from "./pages/Home"; 
 import Research from "./pages/Research"; 
 import Publications from "./pages/Publications"; 
 import Teaching from "./pages/Teaching"; 
-import CV from "./pages/CV"; 
-import Contact from "./pages/Contact"; 
-
+import Ourteam from "./pages/Ourteam"; 
 function App() {
   return (
-    <Router> 
-      <Navbar />
+    <BrowserRouter> 
       <Routes> 
-        <Route path="/" element={<Home />} />
-        <Route path="/research" element={<Research />} />
-        <Route path="/publications" element={<Publications />} />
-        <Route path="/teaching" element={<Teaching />} />
-        <Route path="/cv" element={<CV />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route element={<Layout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/research" element={<Research />} />
+          <Route path="/publications" element={<Publications />} />
+          <Route path="/teaching" element={<Teaching />} />
+          <Route path="/ourteam" element={<Ourteam />} />
+        </Route> 
       </Routes>
-    </Router>
+    </BrowserRouter>
   ); 
 }
 export default App; 

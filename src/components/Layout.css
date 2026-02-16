@@ -1,0 +1,130 @@
+/* make the right banner full height */
+.main {
+  padding: 80px 0;
+}
+.content {
+  width: 100%;
+  max-width: 1300px;  
+  padding: 0 80px;    
+}
+
+.sidebar {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+.sidebar-overlay {
+  height: 100%;
+  width: 100%;
+  padding: 3rem 2.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* 🔑 THIS */
+  align-items: center;       /* 🔑 ADD THIS */
+
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.55),
+    rgba(0, 0, 0, 0.75)
+  );
+}
+
+/* footer should align with nav/text, not float centered */
+.sidebar-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1.2rem;
+}
+
+/* icons slightly smaller + cleaner on right sidebar */
+.social-icons a {
+  color: white;
+  font-size: 1.1rem;      
+  opacity: 0.8;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+/* divider should line up with content width */
+
+.sidebar-line {
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr minmax(260px, 22%);
+  min-height: 100vh;
+  width: 100%;
+
+
+}
+
+.lab-title {
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  line-height: 1.2;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 0.75rem;
+}
+
+.lab-sub {
+  color: white;
+  opacity: 0.85;
+  padding: 0; 
+}
+
+.side-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;     /* center nav links */
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.side-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;     /* center nav links */
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.side-nav a {
+  font-size: 0.85rem;       
+  line-height: 1.6;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  opacity: 0.85;
+  letter-spacing: 0.059em;
+  text-transform: uppercase;
+}
+
+.sidebar-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;  
+}
+
+.side-nav a:hover {
+  opacity: 1;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}

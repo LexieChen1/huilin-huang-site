@@ -19,7 +19,6 @@
 
   color: white;
   text-align: center;
-  padding: 0 2rem;
 }
 
 .hero-overlay h1 {
@@ -42,17 +41,65 @@
 /* BELOW HERO */
 .home-content {
   display: flex;
-  gap: 2.5rem;
+  gap: 50px;
   align-items: flex-start;
 }
 
 .prof-photo {
-  width: 180px;
-  border-radius: 4px;
+  width: 280px;
+  height: auto; 
+  border-radius: 12px;
   object-fit: cover;
 }
 
 .home-text {
   max-width: 700px;
   line-height: 1.7;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.3rem;
+}
+
+.home-text h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+}
+
+.title-divider {
+  width: 100%;
+  height: 1.5px;
+  margin: 25px 0 60px 0;
+  background-color: #2c3e50;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.2);
+}
+
+.home-lead {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 18px;
+}
+
+.home-highlights {
+  margin-top: 30px;
+}
+
+.home-highlights h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+.home-highlights ul {
+  padding-left: 18px;
+  line-height: 1.7;
+}
+
+.home-highlights li {
+  margin-bottom: 6px;
 }
