@@ -1,4 +1,4 @@
-# Dr.Huilin Huang – Academic Website
+# Dr. Huilin Huang – Academic Website
 
 This repository contains the source code for the personal academic website of **Dr. Huilin Huang**,  
 Assistant Professor in the **Department of Environmental Sciences** at the **University of Virginia**.
