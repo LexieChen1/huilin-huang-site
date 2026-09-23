@@ -1,66 +1,99 @@
+import { Link } from "react-router-dom";
+import { FiArrowUpRight } from "react-icons/fi";
+import { themes } from "../data/research";
 import "./Research.css";
-import researchImage from "../assets/WUI.jpg";
 
 export default function Research() {
   return (
-    <>
-      <h1>Research Focus</h1>
-      <div className="title-divider" />
-
-      <section className="research-section">
-        {/* LEFT TEXT */}
-        <div className="research-text">
-          <p className="research-lead">
-            We investigate how terrestrial ecosystems respond to and shape
-            environmental change under a warming climate. Our work combines
-            field observations, Earth system models, and data-driven methods
-            to uncover mechanisms governing wildfire dynamics, carbon cycling,
-            and land–atmosphere feedbacks.
-          </p>
-
-          <p>
-            By integrating process-based modeling with machine learning,
-            we aim to improve predictive understanding of wildfire risk,
-            ecosystem resilience, and biogeochemical feedbacks at regional
-            to continental scales.
-          </p>
-
-          <div className="research-themes">
-            <h3>Core Research Themes</h3>
-
-            <ul>
-              <li>
-                <strong>Wildfire and Land Cover Change</strong>
-                <span>
-                  Quantifying post-fire canopy loss, vegetation recovery,
-                  and climate-driven shifts in disturbance regimes.
+    <div className="container inner-page">
+      <header className="page-intro">
+        <span className="eyebrow">Research / Connecting scales & systems</span>
+        <h1>
+          Fire is part of
+          <br />a bigger picture.
+        </h1>
+        <p>
+          We study the connections between wildfire, terrestrial ecosystems, and
+          the atmosphere. Our work integrates observations, Earth system models,
+          and machine learning to understand a changing environment.
+        </p>
+      </header>
+      <div className="research-methods">
+        <span className="eyebrow">Our approach</span>
+        <p>
+          Observe the landscape.
+          <br />
+          Understand the process.
+          <br />
+          <em>Model what comes next.</em>
+        </p>
+        <div className="tags">
+          <span className="tag">Remote sensing</span>
+          <span className="tag">Process-based modeling</span>
+          <span className="tag">Machine learning</span>
+        </div>
+      </div>
+      {themes.map((theme, index) => (
+        <section id={theme.id} className="research-detail" key={theme.id}>
+          <span className="research-number">0{index + 1}</span>
+          <div>
+            <h2>{theme.title}</h2>
+            <p>{theme.description}</p>
+            <div className="tags">
+              {theme.methods.map((method) => (
+                <span className="tag" key={method}>
+                  {method}
                 </span>
-              </li>
-
-              <li>
-                <strong>Terrestrial Carbon Cycle and Biogeochemistry</strong>
-                <span>
-                  Understanding carbon–nitrogen feedbacks and ecosystem
-                  responses to climate extremes.
-                </span>
-              </li>
-
-              <li>
-                <strong>Land Surface Modeling and Land–Atmosphere Interaction</strong>
-                <span>
-                  Developing and applying coupled regional climate–land
-                  models to study feedback mechanisms across scales.
-                </span>
-              </li>
-            </ul>
+              ))}
+            </div>
+          </div>
+          <aside>
+            <span className="eyebrow">Related work</span>
+            <p>{theme.example}</p>
+            <Link className="text-link" to="/publications">
+              Explore publications <FiArrowUpRight />
+            </Link>
+          </aside>
+        </section>
+      ))}
+      <section className="research-projects">
+        <span className="eyebrow">From understanding to application</span>
+        <h2>Selected funded projects</h2>
+        <p className="note">Project information from the December 2025 CV.</p>
+        <div className="row-list">
+          <div className="detail-row">
+            <span className="detail-year">2026–2028</span>
+            <div>
+              <h3>From prediction to practice</h3>
+              <p>
+                A high-resolution fire-response framework to enhance community
+                resilience. UVA Environmental Institute · Principal
+                Investigator.
+              </p>
+            </div>
+          </div>
+          <div className="detail-row">
+            <span className="detail-year">2026–2028</span>
+            <div>
+              <h3>Next-generation forest fire modeling</h3>
+              <p>
+                Very-high-resolution remote sensing and deep learning. UVA
+                Environmental Institute · Co-Principal Investigator.
+              </p>
+            </div>
+          </div>
+          <div className="detail-row">
+            <span className="detail-year">2024–ongoing</span>
+            <div>
+              <h3>An integrated climate–ecosystem–wildfire model</h3>
+              <p>
+                Assessing the impact of energy systems on wildfires. U.S.
+                Department of Energy · Co-Principal Investigator.
+              </p>
+            </div>
           </div>
         </div>
-
-        {/* RIGHT IMAGE */}
-        <div className="research-image">
-          <img src={researchImage} alt="Wildfire research" />
-        </div>
       </section>
-    </>
+    </div>
   );
 }

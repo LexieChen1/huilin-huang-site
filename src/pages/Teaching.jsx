@@ -1,83 +1,94 @@
-import "./Teaching.css"; 
+import "./Teaching.css";
+const courses = [
+  [
+    "2026",
+    "Climate Extremes and Natural Hazards",
+    "Lead Instructor",
+    "University of Virginia",
+  ],
+  [
+    "2021",
+    "Human Impact on Biophysical Environment",
+    "Teaching Assistant",
+    "UCLA · 110 undergraduate students",
+  ],
+  [
+    "2019–2020",
+    "People and Earth’s Ecosystems",
+    "Teaching Assistant",
+    "UCLA · 50 undergraduate students",
+  ],
+  [
+    "2018–2020",
+    "Introduction to Biophysical Modeling of Land Surface Processes",
+    "Teaching Assistant",
+    "UCLA · 12 graduate students",
+  ],
+];
 
 export default function Teaching() {
   return (
-    <>
-      <h1>Teaching</h1>
-      <div className="title-divider" />
-
-      <section className="teaching-section">
-        <h2 className="section-title">Teaching Experience</h2>
-
-        <div className="teaching-item">
-          <span className="year">2026</span>
-          <div>
-            <p className="course-title">
-              Climate Extremes and Natural Hazards
-            </p>
-            <p className="role">Lead Instructor</p>
-          </div>
+    <div className="container inner-page">
+      <header className="page-intro">
+        <span className="eyebrow">Teaching / Learning across disciplines</span>
+        <h1>
+          Making sense of
+          <br />
+          our changing environment.
+        </h1>
+        <p>
+          Teaching and mentoring at the intersection of climate, ecosystems, and
+          biophysical processes.
+        </p>
+      </header>
+      <section>
+        <span className="eyebrow">In the classroom</span>
+        <h2>Teaching experience</h2>
+        <div className="row-list">
+          {courses.map(([year, title, role, details]) => (
+            <article className="detail-row course-row" key={title}>
+              <span className="detail-year">{year}</span>
+              <div>
+                <h3>{title}</h3>
+                <p>{details}</p>
+              </div>
+              <span className="tag">{role}</span>
+            </article>
+          ))}
         </div>
-
-        <div className="teaching-item">
-          <span className="year">2019–2020</span>
-          <div>
-            <p className="course-title">
-              People and Earth’s Ecosystems
-            </p>
-            <p className="role">Teaching Assistant</p>
-          </div>
+      </section>
+      <section className="mentoring-block split">
+        <div>
+          <span className="eyebrow">Beyond the classroom</span>
+          <h2>
+            Supporting the
+            <br />
+            next generation.
+          </h2>
+          <p>
+            Research mentoring spans undergraduate and graduate study, with
+            opportunities to connect computational tools to questions in
+            environmental science.
+          </p>
         </div>
-
-        <div className="teaching-item">
-          <span className="year">2018–2020</span>
-          <div>
-            <p className="course-title">
-              Introduction to Biophysical Modeling of Land Surface Processes
-            </p>
-            <p className="role">Teaching Assistant</p>
+        <div>
+          <h3>Mentoring at UCLA</h3>
+          <div className="detail-row">
+            <span className="detail-year">2020–2021</span>
+            <div>
+              <h3>Graduate students</h3>
+              <p>Khalil Ganem · Zhijiong Cao</p>
+            </div>
           </div>
-        </div>
-
-        <div className="teaching-item">
-          <span className="year">2021</span>
-          <div>
-            <p className="course-title">
-              Human Impact on Biophysical Environment
-            </p>
-            <p className="role">Teaching Assistant</p>
+          <div className="detail-row">
+            <span className="detail-year">2018–2020</span>
+            <div>
+              <h3>Undergraduate students</h3>
+              <p>Min-Ying Li · Yuan Ma · Ziwei Li</p>
+            </div>
           </div>
         </div>
       </section>
-
-      <section className="mentoring-section">
-        <h2 className="section-title">Mentoring</h2>
-
-        <div className="mentoring-group">
-          <p className="mentoring-year">2025–Present</p>
-          <ul>
-            <li>Zeyu Xia – Graduate Student</li>
-            <li>Lexie Chen – Undergraduate Student</li>
-          </ul>
-        </div>
-
-        <div className="mentoring-group">
-          <p className="mentoring-year">Graduate Student Committees</p>
-          <ul>
-            <li>Ginny Henderson</li>
-            <li>Jagdish Desai</li>
-          </ul>
-        </div>
-
-        <div className="mentoring-group">
-          <p className="mentoring-year">Undergraduate Advising</p>
-          <ul>
-            <li>Astrid Kaczmarzewski</li>
-            <li>Amilyn Estes</li>
-            <li>Elijah Hall</li>
-          </ul>
-        </div>
-      </section>
-    </>
+    </div>
   );
 }

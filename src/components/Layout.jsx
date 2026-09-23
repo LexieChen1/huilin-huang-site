@@ -1,61 +1,127 @@
-import { Outlet, NavLink } from "react-router-dom";
-import { FaXTwitter, FaGithub, FaEnvelope, FaGoogle } from "react-icons/fa6";
-import sidebarImage from "../assets/wildfire.jpg";
+import { useEffect, useState } from "react";
+import { Link, NavLink, Outlet, useLocation } from "react-router-dom";
+import { FiArrowUpRight, FiMenu, FiX } from "react-icons/fi";
+import cv from "../assets/Huilin_Huang_CV.pdf";
 import "./Layout.css";
 
+const links = [
+  ["/", "Home"],
+  ["/research", "Research"],
+  ["/ourteam", "People"],
+  ["/publications", "Publications"],
+  ["/teaching", "Teaching"],
+  ["/opportunities", "Opportunities"],
+];
+
 export default function Layout() {
+  const { pathname, hash } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    const title =
+      links.find(([path]) => path === pathname)?.[1] || "Page not found";
+    document.title = title + " | Huilin Huang · Wild–Urban Landscape Fire Lab";
+    document.getElementById("main-content")?.focus({ preventScroll: true });
+  }, [pathname]);
+  useEffect(() => {
+    if (hash) document.getElementById(hash.slice(1))?.scrollIntoView();
+  }, [pathname, hash]);
   return (
-    <div className="layout">
-      {/* PAGE CONTENT */}
-      <main className="main">
-        <div className="content">
-          <Outlet />
-        </div>
+    <>
+      <a className="skip-link" href="#main-content">
+        Skip to content
+      </a>
+      <Header key={pathname} />
+      <main id="main-content" tabIndex={-1}>
+        <Outlet />
       </main>
-      {/* SIDEBAR */}
-      <aside
-        className="sidebar"
-        style={{ backgroundImage: `url(${sidebarImage})` }}
-      >
-        <div className="sidebar-overlay">
-          
-          {/* TOP */}
-          <div className="sidebar-top">
-            <h1 className="lab-title">Wildland Urban Interface Fire</h1>
-            <p className="lab-sub">Huilin Huang</p>
-            <p className="lab-sub">University of Virginia</p>
-
-            <nav className="side-nav">
-              <NavLink to="/">Home</NavLink>
-              <NavLink to="/research">Research</NavLink>
-              <NavLink to="/publications">Publications</NavLink>
-              <NavLink to="/teaching">Teaching</NavLink>
-              <NavLink to="/ourteam">Our Team</NavLink>
-            </nav>
+      <footer className="site-footer">
+        <div className="container footer-grid">
+          <div>
+            <Link className="footer-name" to="/">
+              Huilin Huang<span>Wild–Urban Landscape Fire Lab</span>
+            </Link>
+            <p>
+              Understanding fire. Connecting systems.
+              <br />
+              Informing a more resilient future.
+            </p>
           </div>
-
-          {/* BOTTOM (SOCIAL MEDIA) */}
-          <div className="sidebar-footer">
-            <div className="social-icons">
-              <a href="https://x.com" target="_blank" rel="noreferrer">
-                <FaXTwitter />
-              </a>
-              <a href="https://github.com" target="_blank" rel="noreferrer">
-                <FaGithub />
-              </a>
-              <a href="mailto:mgh4rc@virginia.edu">
-                <FaEnvelope />
-              </a>
-              <a href="https://scholar.google.com" target="_blank" rel="noreferrer">
-                <FaGoogle />
-              </a>
-            </div>
-
-            <div className="sidebar-line" />
+          <div>
+            <span className="eyebrow">Find us</span>
+            <p>
+              Department of Environmental Sciences
+              <br />
+              University of Virginia
+              <br />
+              Charlottesville, Virginia
+            </p>
           </div>
-
+          <div>
+            <span className="eyebrow">Let’s connect</span>
+            <a className="footer-contact" href="mailto:mgh4rc@virginia.edu">
+              mgh4rc@virginia.edu <FiArrowUpRight />
+            </a>
+            <a
+              className="text-link"
+              href={cv}
+              download="Huilin_Huang_CV_Dec2025.pdf"
+            >
+              Download CV <span aria-hidden="true">↓</span>
+            </a>
+          </div>
         </div>
-      </aside>
-    </div>
+        <div className="container footer-bottom">
+          <span>© {new Date().getFullYear()} Huilin Huang</span>
+          <span>University of Virginia · Environmental Sciences</span>
+        </div>
+      </footer>
+    </>
+  );
+}
+
+function Header() {
+  const [open, setOpen] = useState(false);
+  return (
+    <header className="site-header">
+      <div className="container header-inner">
+        <Link to="/" className="brand" aria-label="Huilin Huang lab home">
+          <span className="brand-mark" aria-hidden="true">
+            h<span>.</span>
+          </span>
+          <span>
+            HUILIN HUANG<small>WILD–URBAN LANDSCAPE FIRE LAB</small>
+          </span>
+        </Link>
+        <button
+          className="menu-toggle"
+          aria-expanded={open}
+          aria-controls="main-navigation"
+          aria-label={open ? "Close navigation" : "Open navigation"}
+          onClick={() => setOpen(!open)}
+        >
+          {open ? <FiX /> : <FiMenu />}
+        </button>
+        <nav
+          id="main-navigation"
+          aria-label="Main navigation"
+          className={open ? "navigation is-open" : "navigation"}
+          onKeyDown={(event) => {
+            if (event.key === "Escape") {
+              setOpen(false);
+              document.querySelector(".menu-toggle")?.focus();
+            }
+          }}
+        >
+          {links.map(([path, label]) => (
+            <NavLink key={path} to={path} end={path === "/"}>
+              {label}
+            </NavLink>
+          ))}
+          <a href="mailto:mgh4rc@virginia.edu" className="nav-contact">
+            Get in touch <FiArrowUpRight />
+          </a>
+        </nav>
+      </div>
+    </header>
   );
 }
