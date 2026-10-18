@@ -30,7 +30,7 @@ export default function Home() {
             Explore our research <FiArrowUpRight />
           </Link>
           <div className="hero-footnote">
-            <span>THE WILD–URBAN LANDSCAPE FIRE LAB</span>
+            <span>THE Environmental Hazard & Climate Resilience LAB</span>
             <span>CHARLOTTESVILLE, VA</span>
           </div>
         </div>
