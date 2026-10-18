@@ -17,7 +17,7 @@ export default function Home() {
           <h1>
             Understanding Land–Atmosphere 
             <br />
-            <em>Interactions</em>
+            <em>Interactions<em>
             <br />
             and Climate <em>Extremes</em>.
             <br />
