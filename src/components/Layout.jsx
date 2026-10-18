@@ -19,7 +19,7 @@ export default function Layout() {
     window.scrollTo(0, 0);
     const title =
       links.find(([path]) => path === pathname)?.[1] || "Page not found";
-    document.title = title + " | Huilin Huang · Wild–Urban Landscape Fire Lab";
+    document.title = title + " | Huilin Huang · Climate Extremes & Earth System Lab";
     document.getElementById("main-content")?.focus({ preventScroll: true });
   }, [pathname]);
   useEffect(() => {
