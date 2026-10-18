@@ -20,6 +20,7 @@ export default function Home() {
             </em>Interactions</em>
             <br />
             and Climate <em>Extremes</em>.
+            <br />
           </h1>
           <p>
             Our research integrates numerical modeling, satellite observations, and data-driven approaches to understand interactions among climate, terrestrial ecosystems, and extreme events, with a current emphasis on wildfire dynamics and impacts.
