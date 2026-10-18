@@ -9,13 +9,11 @@ export default function Research() {
       <header className="page-intro">
         <span className="eyebrow">Research / Connecting scales & systems</span>
         <h1>
-          Fire is part of
-          <br />a bigger picture.
+          Understanding extremes. 
+          <br />Connecting Earth systems.
         </h1>
         <p>
-          We study the connections between wildfire, terrestrial ecosystems, and
-          the atmosphere. Our work integrates observations, Earth system models,
-          and machine learning to understand a changing environment.
+          We study how climate extremes and environmental disturbances interact with terrestrial ecosystems and the atmosphere. We integrate observations, process-based modeling, and machine learning to understand the underlying mechanisms, feedbacks, and predictability of these interconnected processes, with a current emphasis on wildfire dynamics and impacts.
         </p>
       </header>
       <div className="research-methods">
