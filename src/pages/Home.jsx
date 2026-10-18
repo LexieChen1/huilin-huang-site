@@ -22,7 +22,7 @@ export default function Home() {
             world.
           </h1>
           <p>
-            Understand climate-related hazards (wildfire, drought, flood) and their impacts on natural environments and human communities all over the globe.
+            Our research integrates numerical modeling, satellite observations, and data-driven approaches to understand interactions among climate, terrestrial ecosystems, and extreme events, with a current emphasis on wildfire dynamics and impacts.
           </p>
           <Link to="/research" className="button">
             Explore our research <FiArrowUpRight />
