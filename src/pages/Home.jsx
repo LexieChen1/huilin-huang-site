@@ -15,20 +15,20 @@ export default function Home() {
             Environmental Sciences
           </span>
           <h1>
-            Understanding natural hazard
+            Understanding Land–Atmosphere Interactions
             <br />
-            in a <em>changing</em>
+            and Climate <em>Extremes</em>
             <br />
             world.
           </h1>
           <p>
-            Understand climate-related hazards and their impacts on natural environments and human communities all over the globe.
+            Understand climate-related hazards (wildfire, drought, flood) and their impacts on natural environments and human communities all over the globe.
           </p>
           <Link to="/research" className="button">
             Explore our research <FiArrowUpRight />
           </Link>
           <div className="hero-footnote">
-            <span>THE Environmental Hazard & Climate Resilience LAB</span>
+            <span>THE Climate Extremes & Earth System LAB</span>
             <span>CHARLOTTESVILLE, VA</span>
           </div>
         </div>
