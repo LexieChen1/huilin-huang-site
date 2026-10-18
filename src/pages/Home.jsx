@@ -15,11 +15,11 @@ export default function Home() {
             Environmental Sciences
           </span>
           <h1>
-            Understanding Land–Atmosphere Interactions
+            Understanding Land–Atmosphere 
             <br />
-            and Climate <em>Extremes</em>
+            </em>Interactions</em>
             <br />
-            world.
+            and Climate <em>Extremes</em>.
           </h1>
           <p>
             Our research integrates numerical modeling, satellite observations, and data-driven approaches to understand interactions among climate, terrestrial ecosystems, and extreme events, with a current emphasis on wildfire dynamics and impacts.
