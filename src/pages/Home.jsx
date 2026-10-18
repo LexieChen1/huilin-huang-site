@@ -15,16 +15,14 @@ export default function Home() {
             Environmental Sciences
           </span>
           <h1>
-            Understanding fire
+            Understanding natural hazard
             <br />
             in a <em>changing</em>
             <br />
             world.
           </h1>
           <p>
-            Exploring the connections between wildfire, ecosystems, and
-            climate—from wildland landscapes to the communities that call them
-            home.
+            Understand climate-related hazards and their impacts on natural environments and human communities all over the globe.
           </p>
           <Link to="/research" className="button">
             Explore our research <FiArrowUpRight />
