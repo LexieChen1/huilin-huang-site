@@ -19,7 +19,7 @@ export default function Layout() {
     window.scrollTo(0, 0);
     const title =
       links.find(([path]) => path === pathname)?.[1] || "Page not found";
-    document.title = title + " | Huilin Huang · Climate Extremes & Earth System Lab";
+    document.title = title + " | Huilin Huang · CLIMATE EXTREMES & EARTH SYSTEM LAB";
     document.getElementById("main-content")?.focus({ preventScroll: true });
   }, [pathname]);
   useEffect(() => {
@@ -38,7 +38,7 @@ export default function Layout() {
         <div className="container footer-grid">
           <div>
             <Link className="footer-name" to="/">
-              Huilin Huang<span>Wild–Urban Landscape Fire Lab</span>
+              Huilin Huang<span>CLIMATE EXTREMES & EARTH SYSTEM LAB</span>
             </Link>
             <p>
               Understanding fire. Connecting systems.
@@ -89,7 +89,7 @@ function Header() {
             h<span>.</span>
           </span>
           <span>
-            HUILIN HUANG<small>WILD–URBAN LANDSCAPE FIRE LAB</small>
+            HUILIN HUANG<small>CLIMATE EXTREMES & EARTH SYSTEM LAB</small>
           </span>
         </Link>
         <button
