@@ -41,7 +41,7 @@ export const publications = [
     "title": "ERF-LSFIRE v1.0: Coupling a Level-Set Fire Model with the Energy Research and Forecasting Model for Fire-Atmosphere Simulations",
     "authors": "Liu, Y., Huang, H., Saltiel, T. M., et al.",
     "journal": "GMD Discussion",
-    "year": 2026,
+    "year": null,
     "status": "Preprint",
     "doi": null,
     "citation": "Liu, Y., Huang, H., Saltiel, T. M., et al.: ERF-LSFIRE v1.0: Coupling a Level-Set Fire Model with the Energy Research and Forecasting Model for Fire-Atmosphere Simulations, GMD Discussion, EGUSPHERE-2026-5430"
@@ -75,7 +75,7 @@ export const publications = [
   },
   {
     "title": "The Fire Modeling Intercomparison Project (FireMIP) for CMIP7",
-    "authors": "Li, F., [including Huang H.], et al.",
+    "authors": "Li, F., Lawrence, D.M., Rogers, B.M., Burton, C., Huang, H. et al.,",
     "journal": "Geosci. Model Dev.",
     "year": 2026,
     "status": "Published",
