@@ -3,19 +3,16 @@ const courses = [
   [
     "2026",
     "Climate Extremes and Natural Hazards",
-    "Lead Instructor",
     "University of Virginia",
   ],
   [
     "2026",
     "Regional Climate and Land Surface Processes",
-    "Lead Instructor",
     "University of Virginia",
   ],
   [
     "2026",
     "Scientific Wrting: From Craft to Practice",
-    "Lead Instructor",
     "University of Virginia",
   ],  
 ];
