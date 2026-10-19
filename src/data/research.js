@@ -5,7 +5,7 @@ export const themes = [
    short:
      "Understanding how climate variability and change drive land surface extremes and shape their predictability.",
    description:
-     "We investigate how climate variability and change, land surface conditions, and human activities influence the occurrence, intensity, and evolution of extreme events. Our current research emphasizes wildfire dynamics, fire regimes, and fire spread prediction, examining how climate, vegetation, and human influences interact across spatial and temporal scales.",
+     "We investigate how climate variability and change, land surface conditions, and human activities influence the occurrence, intensity, and evolution of extreme events. Our current research emphasizes fire regimes and fire behavior prediction across spatial and temporal scales.",
    methods: [
      "Satellite observations",
      "Earth system modeling",
@@ -20,10 +20,10 @@ export const themes = [
     short:
       "Examining how disturbance changes ecosystem productivity, carbon cycling, and the movement of water.",
     description:
-      "Our work connects fire disturbance to ecosystem leaf area, gross primary production, evapotranspiration, and biogeochemistry. We combine observations with land surface modeling to understand these linked responses at watershed and regional scales.",
+      "Our work connects fire disturbance to tree mortality, ecosystem primary production, evapotranspiration, and biogeochemistry. We combine observations with land surface modeling to understand these linked responses at watershed and regional scales.",
     methods: [
+      "Forest Mortality",
       "Biogeochemistry",
-      "Ecosystem observations",
       "Land surface models",
     ],
     example:
@@ -35,7 +35,7 @@ export const themes = [
     short:
       "Investigating exchanges of energy, water, and carbon between the land and atmosphere and their roles in climate variability and feedbacks.",
     description:
-      "We study how terrestrial ecosystems and land surface processes interact with the atmosphere across spatial and temporal scales. Our research examines the effects of vegetation, land cover change, surface heterogeneity, and environmental disturbances on surface energy and water exchanges, atmospheric dynamics, and climate feedbacks.",
+      "We study how land surface processes interact with the atmosphere across spatial and temporal scales. Our research examines the effects of vegetation dynamics, land cover change, surface heterogeneity on land-atmosphere energy and water exchanges, atmospheric dynamics, and climate feedbacks.",
     methods: [
       "Regional climate modeling",
       "Land surface processes",
