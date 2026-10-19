@@ -7,23 +7,17 @@ const courses = [
     "University of Virginia",
   ],
   [
-    "2021",
-    "Human Impact on Biophysical Environment",
-    "Teaching Assistant",
-    "UCLA · 110 undergraduate students",
+    "2026",
+    "Regional Climate and Land Surface Processes",
+    "Lead Instructor",
+    "University of Virginia",
   ],
   [
-    "2019–2020",
-    "People and Earth’s Ecosystems",
-    "Teaching Assistant",
-    "UCLA · 50 undergraduate students",
-  ],
-  [
-    "2018–2020",
-    "Introduction to Biophysical Modeling of Land Surface Processes",
-    "Teaching Assistant",
-    "UCLA · 12 graduate students",
-  ],
+    "2026",
+    "Scientific Wrting: From Craft to Practice",
+    "Lead Instructor",
+    "University of Virginia",
+  ],  
 ];
 
 export default function Teaching() {
