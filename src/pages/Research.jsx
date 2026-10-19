@@ -16,8 +16,7 @@ export default function Research() {
           We study how climate extremes interact with terrestrial ecosystems and
           the atmosphere. We integrate observations, process-based modeling, and
           machine learning to understand the underlying mechanisms, feedbacks,
-          and predictability of these interconnected processes, with a current
-          emphasis on wildfire dynamics and impacts.
+          and predictability of these interconnected processes.
         </p>
       </header>
       <div className="research-methods">
