@@ -23,7 +23,7 @@ export const publications = [
     "title": "Long-Term Hydrologic Response and Recovery of a Fire-Affected Watershed: A Case Study of the Chetco River",
     "authors": "Valenau, E., Huang, H., Pradhan, N., Floyd, I., Lakshmi, V., et al.",
     "journal": "",
-    "year": nullReview
+    "year": null,
     "status": "In Review",
     "doi": null,
     "citation": "Valenau, E., Huang, H., Pradhan, N., Floyd, I., Lakshmi, V., et al.: Long-Term Hydrologic Response and Recovery of a Fire-Affected Watershed: A Case Study of the Chetco River, In Review"
