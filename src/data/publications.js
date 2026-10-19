@@ -71,7 +71,7 @@ export const publications = [
     "year": 2026,
     "status": "Published",
     "doi": null,
-    "citation": "Xia, Z., Chen, L., Liu, Y., Huang, H., et al.: FireDataForge: A Unified Framework for Multi-Source Wildfire Data Retrieval and Integration, IEEE IRI, 2026."
+    "citation": "Xia, Z., Chen, L., Liu, Y., Huang, H.: FireDataForge: A Unified Framework for Multi-Source Wildfire Data Retrieval and Integration, IEEE IRI, 2026."
   },
   {
     "title": "The Fire Modeling Intercomparison Project (FireMIP) for CMIP7",
