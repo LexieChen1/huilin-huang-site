@@ -5,7 +5,7 @@ export const themes = [
    short:
      "Understanding how climate variability and change drive land surface extremes and shape their predictability.",
    description:
-     "We investigate how climate variability and change, land surface conditions, and human activities influence the occurrence, intensity, and evolution of land surface extremes. Our current research emphasizes wildfire dynamics, fire regimes, and fire spread prediction, examining how climate, vegetation, and human influences interact across spatial and temporal scales. By integrating satellite observations, Earth system modeling, and machine learning, we aim to advance process-level understanding and improve the prediction of extreme events in a changing climate.",
+     "We investigate how climate variability and change, land surface conditions, and human activities influence the occurrence, intensity, and evolution of extreme events. Our current research emphasizes wildfire dynamics, fire regimes, and fire spread prediction, examining how climate, vegetation, and human influences interact across spatial and temporal scales.",
    methods: [
      "Satellite observations",
      "Earth system modeling",
