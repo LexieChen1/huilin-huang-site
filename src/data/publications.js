@@ -6,7 +6,7 @@ export const publications = [
     "authors": "Huang, H.",
     "journal": "AGU Advances",
     "year": null,
-    "status": "Submitted",
+    "status": "In Review",
     "doi": null,
     "citation": "Huang, H. (Invited): Wildfire Science at a Turning Point: Integrating Observation, Modeling, and Action Across the Fire Cycle, AGU Advances, Submitted"
   },
@@ -15,7 +15,7 @@ export const publications = [
     "authors": "Li, Z., Huang, H., et al.",
     "journal": "",
     "year": null,
-    "status": "In review",
+    "status": "In Review",
     "doi": null,
     "citation": "Li, Z., Huang, H., et al.: Integrating ELM-BGC simulated carbon cycling into ATS-PFLOTRAN hydro-biogeochemical modeling in a wildfire-impacted Pacific Northwest watershed, In Review"
   },
@@ -23,8 +23,8 @@ export const publications = [
     "title": "Long-Term Hydrologic Response and Recovery of a Fire-Affected Watershed: A Case Study of the Chetco River",
     "authors": "Valenau, E., Huang, H., Pradhan, N., Floyd, I., Lakshmi, V., et al.",
     "journal": "",
-    "year": null,
-    "status": "In review",
+    "year": nullReview
+    "status": "In Review",
     "doi": null,
     "citation": "Valenau, E., Huang, H., Pradhan, N., Floyd, I., Lakshmi, V., et al.: Long-Term Hydrologic Response and Recovery of a Fire-Affected Watershed: A Case Study of the Chetco River, In Review"
   },
@@ -33,7 +33,7 @@ export const publications = [
     "authors": "Huang H., Mcdowell, N., Chen, Y., et al.",
     "journal": "",
     "year": null,
-    "status": "In review",
+    "status": "In Review",
     "doi": null,
     "citation": "Huang, H., Mcdowell, N., Chen, Y., et al.: Warming quadruples forest vulnerability to fire-induced canopy loss across the United States, In Review"
   },
@@ -51,7 +51,7 @@ export const publications = [
     "authors": "Buma, B., Alvarado, E., Barsanti, K. C., [including Huang, H.], et al.",
     "journal": "",
     "year": null,
-    "status": "Accepted",
+    "status": "In Press",
     "doi": null,
     "citation": "Buma, B., Alvarado, E., Barsanti, K. C., [including Huang, H.], et al.: Developing a science strategy and science priorities for FireSat, an upcoming high spatial and temporal resolution fire monitoring system, Accepted"
   },
@@ -60,7 +60,7 @@ export const publications = [
     "authors": "Kakkar, A., Lusk, J., Burkhardt, J., Huang, H., et al.",
     "journal": "JAMA Network Open",
     "year": null,
-    "status": "In press",
+    "status": "In Press",
     "doi": null,
     "citation": "Kakkar, A., Lusk, J., Burkhardt, J., Huang, H., et al.: Wildfires and Nursing Homes in the United States, JAMA Network Open, In Press"
   },
