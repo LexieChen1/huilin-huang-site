@@ -86,7 +86,7 @@ export default function Research() {
           <div className="detail-row">
             <span className="detail-year">2024–ongoing</span>
             <div>
-              <h3>An integrated climate–ecosystem–wildfire model</h3>
+              <h3>An integrated climate–energy–wildfire model</h3>
               <p>
                 Assessing the impact of energy systems on wildfires. U.S.
                 Department of Energy · Co-Principal Investigator.
