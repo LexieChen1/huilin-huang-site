@@ -18,10 +18,15 @@ export default function Publications() {
     else next.set(key, value);
     setParams(next, { replace: true });
   };
+  const statusGroups = {
+  Published: ["Published"],
+  "In Press": ["Accepted", "In press", "In Press"],
+  "In Review": ["Submitted", "In review", "In Review", "Preprint"],
+  };
   const filtered = publications
     .filter(
       (p) =>
-        (status === "All" || p.status === status) &&
+        (status === "All" || statusGroups[status]?.includes(p.status)) &&
         (year === "All" || String(p.year) === year) &&
         (p.title + p.authors + p.journal)
           .toLowerCase()
@@ -80,7 +85,7 @@ export default function Publications() {
         role="group"
         aria-label="Filter by publication status"
       >
-        {["All", "Published", "In review", "In preparation"].map((s) => (
+        {["All", "Published", "In Press", "In Review"].map((s) => (
           <button
             key={s}
             aria-pressed={status === s}
@@ -100,7 +105,13 @@ export default function Publications() {
           <article className="publication" key={p.title}>
             <div className="publication-year">
               {p.year || "Manuscript"}
-              <span className="tag">{p.status}</span>
+              <span className="tag">
+                {["Accepted", "In press", "In Press"].includes(p.status)
+                  ? "In Press"
+                  : ["Submitted", "In review", "In Review", "Preprint"].includes(p.status)
+                    ? "In Review"
+                    : p.status}
+              </span>
             </div>
             <div>
               <span className="publication-journal">
