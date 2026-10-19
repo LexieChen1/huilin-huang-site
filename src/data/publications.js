@@ -9,7 +9,7 @@ export const publications = [
     status: "In preparation",
     doi: null,
     citation:
-      "Huang H., Mcdowell, N., Chen, Y., et al.: Warming amplifies forest vulnerability to fire-induced canopy loss across the United States, In Preparation",
+      "Huang H., Mcdowell, N., Chen, Y., et al.: Warming amplifies forest vulnerability to fire-induced canopy loss across the United States, In Review",
   },
   {
     title:
@@ -27,22 +27,11 @@ export const publications = [
       "The Fire Modeling Intercomparison Project (FireMIP) contribution to CMIP7",
     authors: "Li, F., [including Huang H.], et al.",
     journal: "Geosci. Model Dev.",
-    year: null,
-    status: "In review",
+    year: 2026,
+    status: "Published",
     doi: null,
     citation:
-      "Li, F., [including Huang H.], et al.: The Fire Modeling Intercomparison Project (FireMIP) contribution to CMIP7, Geosci. Model Dev., In Review",
-  },
-  {
-    title:
-      "Cross-scale dominance of soil moisture in dryland vegetation growth",
-    authors: "Shi, H., Huang, K., [including Huang H.], et al.",
-    journal: "Nat. Clim. Change",
-    year: null,
-    status: "In review",
-    doi: null,
-    citation:
-      "Shi, H., Huang, K., [including Huang H.], et al.: Cross-scale dominance of soil moisture in dryland vegetation growth, Nat. Clim. Change, In Review",
+      "Li, F., Lawrence, D.M., Rogers, B.M., Burton, C., Huang, H., et al.: The Fire Modeling Intercomparison Project (FireMIP) for CMIP7, Geosci. Model Dev., 19(9), 3989–4007, 2026.",
   },
   {
     title:
