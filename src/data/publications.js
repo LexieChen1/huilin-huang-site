@@ -42,7 +42,7 @@ export const publications = [
     "authors": "Liu, Y., Huang, H., Saltiel, T. M., et al.",
     "journal": "GMD Discussion",
     "year": null,
-    "status": "Preprint",
+    "status": "In Review",
     "doi": null,
     "citation": "Liu, Y., Huang, H., Saltiel, T. M., et al.: ERF-LSFIRE v1.0: Coupling a Level-Set Fire Model with the Energy Research and Forecasting Model for Fire-Atmosphere Simulations, GMD Discussion, EGUSPHERE-2026-5430"
   },
