@@ -4,17 +4,14 @@ const courses = [
   [
     "2026",
     "Climate Extremes and Natural Hazards",
-    "University of Virginia",
   ],
   [
     "2026",
     "Regional Climate and Land Surface Processes",
-    "University of Virginia",
   ],
   [
     "2026",
     "Scientific Writing: From Craft to Practice",
-    "University of Virginia",
   ],
 ];
 
@@ -84,10 +81,7 @@ export default function Teaching() {
             next generation.
           </h2>
           <p>
-            I mentor undergraduate and graduate students at the
-            University of Virginia, supporting their development
-            as independent researchers through research mentoring,
-            graduate committee service, and academic advising.
+            I mentor the next generation of scientists to think critically, pursue bold ideas, and address environmental challenges.
           </p>
         </div>
 
