@@ -1,4 +1,5 @@
 import "./Teaching.css";
+
 const courses = [
   [
     "2026",
@@ -12,42 +13,68 @@ const courses = [
   ],
   [
     "2026",
-    "Scientific Wrting: From Craft to Practice",
+    "Scientific Writing: From Craft to Practice",
     "University of Virginia",
-  ],  
+  ],
+];
+
+const mentoring = [
+  {
+    title: "Graduate student mentoring",
+    students: "Zeyu Xia (CS) · Jingfan Xia · Kejian Shi",
+  },
+  {
+    title: "Undergraduate research mentoring",
+    students: "Lexie Chen (CS)",
+  },
+  {
+    title: "Graduate student committees",
+    students:
+      "Ginny Henderson · Jagdish Desai · Zejun Cui · Estel Valeanu (CEE) · Farzana Yasmin Ahmad (CS) · Nicholas Hanna · Michelle Nguyen",
+  },
+  {
+    title: "Undergraduate advising",
+    students: "Astrid Kaczmarzewski · Amilyn Estes · Elijah Hall",
+  },
 ];
 
 export default function Teaching() {
   return (
     <div className="container inner-page">
       <header className="page-intro">
-        <span className="eyebrow">Teaching / Learning across disciplines</span>
+        <span className="eyebrow">
+          Teaching / Learning across disciplines
+        </span>
         <h1>
           Making sense of
           <br />
           our changing environment.
         </h1>
         <p>
-          Teaching and mentoring at the intersection of climate, ecosystems, and
-          biophysical processes.
+          Teaching and mentoring at the intersection of climate,
+          ecosystems, and biophysical processes.
         </p>
       </header>
+
       <section>
         <span className="eyebrow">In the classroom</span>
         <h2>Teaching experience</h2>
         <div className="row-list">
-          {courses.map(([year, title, role, details]) => (
-            <article className="detail-row course-row" key={title}>
+          {courses.map(([year, title, institution]) => (
+            <article
+              className="detail-row course-row"
+              key={title}
+            >
               <span className="detail-year">{year}</span>
               <div>
                 <h3>{title}</h3>
-                <p>{details}</p>
+                <p>{institution}</p>
               </div>
-              <span className="tag">{role}</span>
             </article>
           ))}
         </div>
       </section>
+
       <section className="mentoring-block split">
         <div>
           <span className="eyebrow">Beyond the classroom</span>
@@ -57,27 +84,24 @@ export default function Teaching() {
             next generation.
           </h2>
           <p>
-            Research mentoring spans undergraduate and graduate study, with
-            opportunities to connect computational tools to questions in
-            environmental science.
+            I mentor undergraduate and graduate students at the
+            University of Virginia, supporting their development
+            as independent researchers through research mentoring,
+            graduate committee service, and academic advising.
           </p>
         </div>
+
         <div>
-          <h3>Mentoring at UCLA</h3>
-          <div className="detail-row">
-            <span className="detail-year">2020–2021</span>
-            <div>
-              <h3>Graduate students</h3>
-              <p>Khalil Ganem · Zhijiong Cao</p>
+          <h3>Mentoring at UVA</h3>
+          {mentoring.map(({ title, students }) => (
+            <div className="detail-row" key={title}>
+              <span className="detail-year">2025–present</span>
+              <div>
+                <h3>{title}</h3>
+                <p>{students}</p>
+              </div>
             </div>
-          </div>
-          <div className="detail-row">
-            <span className="detail-year">2018–2020</span>
-            <div>
-              <h3>Undergraduate students</h3>
-              <p>Min-Ying Li · Yuan Ma · Ziwei Li</p>
-            </div>
-          </div>
+          ))}
         </div>
       </section>
     </div>
